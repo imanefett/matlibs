@@ -1,0 +1,4 @@
+/bin/sh: 1: [: no: unexpected operator
+gcc: error: debug/complexe.o: Aucun fichier ou dossier de ce type
+gcc: error: debug/real.o: Aucun fichier ou dossier de ce type
+make[1]: *** [compile] Erreur 1
