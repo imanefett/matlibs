@@ -1,4 +1,5 @@
 #include "vectors.h"
+#include "entity.h"
 
 void* vect_new(size_t size, math_entity_t ent, ...) {
     va_list args;

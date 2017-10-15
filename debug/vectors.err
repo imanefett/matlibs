@@ -1,4 +1,23 @@
-/bin/sh: 1: [: no: unexpected operator
-gcc: error: debug/complexe.o: Aucun fichier ou dossier de ce type
-gcc: error: debug/real.o: Aucun fichier ou dossier de ce type
+src/vectors.c: In function ‘main’:
+src/vectors.c:195:32: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     math_entity_t top_entity = &vect_entity, entity = &real_entity;
+                                ^
+src/vectors.c:195:55: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     math_entity_t top_entity = &vect_entity, entity = &real_entity;
+                                                       ^
+src/vectors.c:196:51: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+     math_vect_new_t new = vect_new, top_ent_new = top_entity->new;
+                                                   ^
+src/vectors.c:197:31: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+     math_real_new_t ent_new = entity->new;
+                               ^
+debug/complexe.o:(.rodata+0xb8) : référence indéfinie vers « math_test »
+debug/complexe.o:(.rodata+0xc0) : référence indéfinie vers « math_test »
+/tmp/ccWJDoGU.o:(.rodata+0x138) : référence indéfinie vers « math_test »
+/tmp/ccWJDoGU.o:(.rodata+0x140) : référence indéfinie vers « math_test »
+/tmp/ccWJDoGU.o:(.rodata+0x1b0) : référence indéfinie vers « math_test »
+/tmp/ccWJDoGU.o:(.rodata+0x1b8) : encore plus de références indéfinies suivent vers « math_test »
+/tmp/ccWJDoGU.o:(.rodata+0x1d8) : référence indéfinie vers « math_operation »
+/tmp/ccWJDoGU.o:(.rodata+0x1e0) : référence indéfinie vers « math_operation »
+collect2: error: ld returned 1 exit status
 make[1]: *** [compile] Erreur 1
