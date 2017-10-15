@@ -68,7 +68,7 @@ directory:
 	@[ -d $(path) ] || $(MKDIR) $(path)
 
 compile:
-	@if [ $(OBJ) == 'yes' ]; then $(CC) -I $(incPath) $(CFlags) -c -o $(out) $(in); else $(CC) -I $(incPath) $(CFlags) -o $(out) $(objects); fi
+	@if [ $(OBJ) = 'yes' ]; then $(CC) -I $(incPath) $(CFlags) -c -o $(out) $(in); else $(CC) -I $(incPath) $(CFlags) -o $(out) $(objects); fi
 
 mrproper:
 	@[ ! -d $(binPath)   ] || $(RM) $(binPath)/*
